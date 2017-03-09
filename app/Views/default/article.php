@@ -1,5 +1,5 @@
-<?php 
-    $this->layout('layout', ['title' => 'TechNews | '.ucfirst($categorie), 'current' => ucfirst($categorie)]);
+<?php
+    $this->layout('layout', ['title' => 'TechNews | '.ucfirst($categorie), 'current' => '']);
     use Model\Shortcut;
     $this->start('contenu');
 ?>
@@ -18,9 +18,9 @@
                     <?= $article->DATECREATIONARTICLE; ?>
                 </span>
             </div>
-            
+
              <?= $article->CONTENUARTICLE; ?>
-             
+
             <h5 class="text-right font-heading"><strong>Hugo LIEGEARD</strong> </h5>
 
         </article>

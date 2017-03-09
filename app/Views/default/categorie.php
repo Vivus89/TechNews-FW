@@ -1,5 +1,5 @@
-<?php 
-    $this->layout('layout', ['title' => 'TechNews | '.ucfirst($categorie), 'current' => ucfirst($categorie)]);
+<?php
+    $this->layout('layout', ['title' => 'TechNews | '.ucfirst($categorie), 'current' => '']);
     use Model\Shortcut;
     $this->start('contenu');
 ?>
@@ -38,7 +38,7 @@
                         </article>
                     <?php endforeach; ?>
             </div>
-    
+
             <!--paging
             <div class="paging">
                 <a href="#">Prev</a>
@@ -49,11 +49,11 @@
                 <a href="#">5</a>
                 <a href="#">Next</a>
             </div>-->
-    
+
             <?php } else { ?>
                 <p><strong>Aucune publication pour le moment.</strong></p>
             <?php } ?>
-    
+
         </div>
-        
+
 <?php $this->stop('contenu') ?>

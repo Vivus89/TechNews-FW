@@ -63,7 +63,7 @@ class DefaultController extends Controller
 	    $this->show('default/article', ['article' => $article, 'suggestions' => $suggestions, 'categorie' => $article->LIBELLECATEGORIE]);
 
 	}
-	public function add($add){
+	public function add(){
 		#Connexion à la BDD
 		DBFactory::start();
 		# integration de l'article dans la BDD article
@@ -87,12 +87,20 @@ class DefaultController extends Controller
 
 		$categories->save();
 
-		$auteur= ORM::for_table('auteur')->find_many();
-		$categorie=ORM::for_table('categorie')->find_many();
-		 # Transmettre � la Vue
-		$this->show('default/add',[ 'article'=>$article, 'auteur'=>$auteur, 'auteurs'=>$auteurs , 'categorie'=>$categorie, 'categories'=$categories]);
 
  }
+ }
+public function edit(){
+	#Connexion à la BDD
+	DBFactory::start();
+
+	$auteur= \ORM::for_table('auteur')->find_many();
+	$categorie= \ORM::for_table('categorie')->find_many();
+	 # Transmettre � la Vue
+	$this->show('default/edit',['auteur'=>$auteur , 'categorie'=>$categorie]);
+
+
+
 
 
 	}
