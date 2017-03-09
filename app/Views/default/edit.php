@@ -1,6 +1,7 @@
-<?php 
+<?php
     $this->layout('layout', ['title' => 'TechNews |'.ucfirst($categorie), 'current' => ucfirst($categorie)]);
     use Model\Shortcut;
+    use app\Controller\DefaultController;
     $this->start('contenu');
 ?>
 <div class="row">
@@ -14,7 +15,7 @@
 			<select name="LIBELLECATEGORIE">
 			<?php foreach ($categorie as $category) :?>
 				<option value="<?= $category->LIBELLECATEGORIE ?>"><?= $category->LIBELLECATEGORIE ?></option>
-			<?php endforeach; ?>	
+			<?php endforeach; ?>
 			</select>
 
 			<select name="NOMAUTEUR">
@@ -36,7 +37,7 @@
 			</select>
 
 			<input id="summernote" type="textarea" name="CONTENUARTICLE" placeholder="Votre article..."><br>
-			
+
 		</form>
 
 	</div>

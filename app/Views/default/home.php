@@ -1,6 +1,6 @@
-<?php 
-    # Layout utilisé pour la vue
-    $this->layout('layout', ['title' => 'Accueil', 'current' => 'Accueil']);
+<?php
+    # Layout utilisï¿½ pour la vue
+    $this->layout('layout', ['title' => 'Accueil', 'current' => '']);
     use Model\Shortcut;
 ?>
 
@@ -41,7 +41,7 @@
         		</div>
         	  <?php endforeach; ?>
         	</section>
-        
+
         	<!--spotlight-thumbs-->
         	<section class="spotlight-thumbs">
         		<div class="row">
@@ -66,9 +66,9 @@
         					</div>
         				</div>
         			</div>
-        		<?php endforeach; ?>	
+        		<?php endforeach; ?>
         		</div>
         	</section>
         </div>
-    
+
 <?php $this->stop('contenu') ?>

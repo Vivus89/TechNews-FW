@@ -12,4 +12,5 @@
 		['GET', '/article/[i:id]-[:slug].html', 'Default#article', 'default_article'],
 		# route pour ajouter un article
 		['POST', '/article/add', 'Default#add', 'default_add'],
+		['GET', '/article/edit', 'Default#edit', 'default_edit']
 	);
