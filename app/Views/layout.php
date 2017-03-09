@@ -39,9 +39,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
     <!-- Vender -->
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
-
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
     <link href="<?= $this->assetUrl('css/font-awesome.min.css'); ?>" rel="stylesheet" />
     <link href="<?= $this->assetUrl('css/bootstrap.min.css'); ?>" rel="stylesheet" />
     <link href="<?= $this->assetUrl('css/normalize.min.css'); ?>" rel="stylesheet" />
@@ -194,10 +191,7 @@
         </footer>
     </div>
     <!-- script file -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> 
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
-
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
+    
     <script src="<?= $this->assetUrl('js/jquery.min.js'); ?>"></script>
     <script src="<?= $this->assetUrl('js/bootstrap.js'); ?>"></script>
     <script src="<?= $this->assetUrl('js/owl.carousel.min.js'); ?>"></script>
