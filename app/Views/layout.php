@@ -191,6 +191,7 @@
         </footer>
     </div>
     <!-- script file -->
+    
     <script src="<?= $this->assetUrl('js/jquery.min.js'); ?>"></script>
     <script src="<?= $this->assetUrl('js/bootstrap.js'); ?>"></script>
     <script src="<?= $this->assetUrl('js/owl.carousel.min.js'); ?>"></script>
